@@ -1,0 +1,72 @@
+body {
+  background-color: #edf2f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #536579;
+}
+
+#btn {
+  transition: all 0.5s ease;
+  color: #000000;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  background-color: transparent;
+}
+
+#btn:hover {
+  color: #ffffff;
+  background-color: #536579;
+}
+
+.sosmed {
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.sosmedCard {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background-color: #edf2f3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.ig {
+  border-radius: 90px 5px 5px 5px;
+}
+
+.shopee {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.tiktok {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.wa {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.sosmedCard:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+footer {
+  background-color: #536579;
+}/*# sourceMappingURL=style.css.map */
