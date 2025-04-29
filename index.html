@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <nav
       id="navbar"
-      class="navbar navbar-dark fixed-top navbar-expand-lg p-2 shadow"
+      class="navbar navbar-dark fixed-top navbar-expand-lg p-2 shadow animate__animated animate__fadeInDown animate__slow"
     >
       <div class="container">
         <a id="brand" class="navbar-brand fs-3" href="#">
@@ -59,29 +59,35 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-5 mt-5">
-      <div class="container">
+    <section
+      id="home"
+      class="d-flex align-items-center pt-5"
+      style="min-height: 100vh"
+    >
+      <div
+        class="container animate__animated animate__fadeInUpBig mt-5 shadow bg-white h-90 justify-content-center"
+      >
         <div class="row">
-          <div class="col-lg-6 animate__animated animate__fadeInLeftBig">
+          <div
+            class="col-lg-6 p-0 animate__animated animate__fadeInLeftBig animate__slow"
+          >
             <div
               id="heroCarousel"
-              class="carousel slide"
+              class="carousel slide h-100"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
+              <div class="carousel-inner h-100">
                 <div class="carousel-item active" data-bs-interval="3000">
                   <img
                     src="assets/img/foto1.webp"
-                    class="d-block w-100"
-                    style="object-fit: cover; aspect-ratio: 1/1"
+                    class="img-fluid w-100 object-fit-cover"
                     alt="Slide 1"
                   />
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                   <img
                     src="assets/img/foto2.jpg"
-                    class="d-block w-100"
-                    style="object-fit: cover; aspect-ratio: 1/1"
+                    class="img-fluid w-100 object-fit-cover"
                     alt="Slide 2"
                   />
                 </div>
@@ -90,18 +96,20 @@
           </div>
 
           <div
-            class="col-lg-6 mt-5 p-5 animate__animated animate__fadeInRightBig"
+            class="col-lg-6 d-flex flex-column center justify-content-center animate__animated animate__fadeInRightBig animate__slow"
           >
-            <h1>Define Your Signature. Embrace Timeless Style with Ereclo</h1>
-            <p class="mt-5">
+            <h1 class="p-5">
+              Define Your Signature. Embrace Timeless Style with Ereclo
+            </h1>
+            <blockquote class="blockquote lh-lg px-5">
               Where timeless style meets modern minimalism. ERECLO.STUDIO offers
               thoughtfully designed pieces for those who value quality — fashion
               that feels effortless, yet unforgettable.
-            </p>
-            <div class="text-center mt-5">
+            </blockquote>
+            <div class="text-center pb-5">
               <button
                 id="btn"
-                class="btn rounded-3 px-4 animate__animated animate__pulse animate__infinite"
+                class="btn px-3 animate__animated animate__pulse animate__infinite"
                 onclick="window.open('https://shopee.co.id/ereclo.id', '_blank')"
               >
                 Order Now
@@ -130,7 +138,7 @@
                 <h5 class="card-title">V-neck Shirt - Black</h5>
                 <p class="card-text">Rp 105.000</p>
                 <button
-                  class="btn rounded-3"
+                  class="btn"
                   id="btn"
                   data-bs-toggle="modal"
                   data-bs-target="#productDetailModal"
@@ -154,7 +162,7 @@
                 <h5 class="card-title">Vneck Shirt - Olive</h5>
                 <p class="card-text">Rp 105.000</p>
                 <button
-                  class="btn rounded-3"
+                  class="btn"
                   id="btn"
                   data-bs-toggle="modal"
                   data-bs-target="#productDetailModal"
@@ -177,7 +185,7 @@
                 <h5 class="card-title">Vneck Shirt - Sage</h5>
                 <p class="card-text">Rp 105.000</p>
                 <button
-                  class="btn rounded-3"
+                  class="btn"
                   id="btn"
                   data-bs-toggle="modal"
                   data-bs-target="#productDetailModal"
@@ -202,7 +210,7 @@
                 <p class="card-text">Rp 105.000</p>
                 <button
                   id="btn"
-                  class="btn btn-dark btn-sm"
+                  class="btn"
                   data-bs-toggle="modal"
                   data-bs-target="#productDetailModal"
                   onclick="showProductDetail('Regular Black Shirt', 'Rp 105.000', 'High quality and comfortable Regular shirt, perfect for everyday wear.', 'assets/img/blackRegular.jpg')"
@@ -428,7 +436,7 @@
               </ul>
 
               <!--Sosmed-->
-              <h5 class="mt-2">Follow Us on Social Media :</h5>
+              <h5>Follow Us on Social Media :</h5>
               <div class="sosmed d-flex flex-column align-items-center mt-3">
                 <div class="up">
                   <button

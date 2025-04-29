@@ -1,10 +1,10 @@
 $background-color: #edf2f3;
 $primary-color: #536579;
-$fontstack: Arial, Helvetica, sans-serif;
+$font: Arial, Helvetica, sans-serif;
 
 body {
   background-color: $background-color;
-  font-family: $fontstack;
+  font-family: $font;
 }
 
 nav {
@@ -12,6 +12,8 @@ nav {
 }
 
 #btn {
+  $btn-radius: 0.7rem !global;
+  border-radius: $btn-radius;
   transition: all 0.5s ease;
   color: #000000;
   border: 1px solid rgb(0, 0, 0);
@@ -20,6 +22,7 @@ nav {
 }
 #btn:hover {
   color: #ffffff;
+  scale: 1.2;
   background-color: $primary-color;
 }
 
@@ -27,14 +30,10 @@ nav {
   gap: 0.5em;
 }
 .up {
-  display: flex;
-  flex-direction: row;
   gap: 0.5em;
 }
 
 .down {
-  display: flex;
-  flex-direction: row;
   gap: 0.5em;
 }
 
