@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ERECLO</title>
+    <link rel="icon" href="assets/img/ereclo.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/361d080a9f.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #edf2f3;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #btn {
+        transition: all 0.5s ease;
+        color: #000000;
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        background-color: transparent;
+      }
+      #btn:hover {
+        color: #ffffff;
+        background-color: #536579;
+      }
+      button {
+        background-color: #536579;
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-dark fixed-top navbar-expand-lg p-2 shadow"
+      style="background-color: #536579"
+    >
+      <div class="container">
+        <a id="brand" class="navbar-brand fs-3" href="#">
+          <img src="assets/img/logo.png" height="40px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-5 mt-5">
+      <div class="container shadow">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              id="heroCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img
+                    src="assets/img/foto1.webp"
+                    class="d-block w-100"
+                    style="object-fit: cover; aspect-ratio: 1/1"
+                    alt="Slide 1"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                    src="assets/img/foto2.jpg"
+                    class="d-block w-100"
+                    style="object-fit: cover; aspect-ratio: 1/1"
+                    alt="Slide 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 p-5 mt-4 d-flex flex-column">
+            <h1 class="p-">
+              Define Your Signature. Embrace Timeless Style with Ereclo
+            </h1>
+            <p class="mt-5">
+              Where timeless style meets modern minimalism. ERECLO.STUDIO offers
+              thoughtfully designed pieces for those who value quality — fashion
+              that feels effortless, yet unforgettable.
+            </p>
+            <div class="text-center mt-5">
+              <button
+                id="btn"
+                class="btn rounded-3 px-4"
+                onclick="window.open('https://shopee.co.id/ereclo.id', '_blank')"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+
+    <section id="products" class="py-5 pt-5">
+      <div class="container mt-5 pt-5">
+        <h2><strong>Featured Products</strong></h2>
+        <div class="row">
+          <!-- Product Card 1 -->
+          <div class="col-6 col-md-3 mb-3">
+            <div class="card h-100 shadow rounded-3">
+              <img
+                src="assets/img/blackVneckptb.jpg"
+                class="card-img-top"
+                alt="Black V-neck Shirt"
+              />
+              <div class="card-body">
+                <h5 class="card-title">V-neck Shirt - Black</h5>
+                <p class="card-text">Rp 105.000</p>
+                <button
+                  class="btn rounded-3"
+                  id="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productDetailModal"
+                  onclick="showProductDetail('V-neck Shirt - Black', 'Rp 105.000', 'Elegant black V-neck shirt made from premium cotton, ideal for casual and formal styles.', 'assets/img/blackVneckptb.jpg')"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="col-6 col-md-3 mb-3">
+            <div class="card h-100 shadow rounded-3">
+              <img
+                src="assets/img/oliveVneckptb.jpg"
+                class="card-img-top"
+                alt="OliveVneck"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vneck Shirt - Olive</h5>
+                <p class="card-text">Rp 105.000</p>
+                <button
+                  class="btn rounded-3"
+                  id="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productDetailModal"
+                  onclick="showProductDetail('Vneck Shirt - Olive', 'Rp 105.000', 'High quality and comfortable Vneck shirt, perfect for everyday wear.', 'assets/img/oliveVneckptb.jpg')"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="col-6 col-md-3 mb-3">
+            <div class="card h-100 shadow rounded-3">
+              <img
+                src="assets/img/sageVneckptb.jpg"
+                class="card-img-top"
+                alt="Olive Shirt"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vneck Shirt - Sage</h5>
+                <p class="card-text">Rp 105.000</p>
+                <button
+                  class="btn rounded-3"
+                  id="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productDetailModal"
+                  onclick="showProductDetail('Vneck Shirt - Sage', 'Rp 105.000', 'Fresh Sage Shirt offering breathable comfort throughout your day.', 'assets/img/sageVneckptb.jpg')"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="col-6 col-md-3 mb-3">
+            <div class="card h-100 shadow rounded-3">
+              <img
+                src="assets/img/blackRegular.jpg"
+                class="card-img-top"
+                alt="Regular Sage Shirt"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Regular Black Shirt</h5>
+                <p class="card-text">Rp 105.000</p>
+                <button
+                  id="btn"
+                  class="btn btn-dark btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#productDetailModal"
+                  onclick="showProductDetail('Regular Black Shirt', 'Rp 105.000', 'High quality and comfortable Regular shirt, perfect for everyday wear.', 'assets/img/blackRegular.jpg')"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="productDetailModal"
+        tabindex="-1"
+        aria-labelledby="productDetailModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div id="modalContent" class="modal-content rounded-4">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productDetailModalLabel">
+                Product Detail
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img
+                src=""
+                id="productImage"
+                class="img-fluid rounded mb-3"
+                alt="Product Image"
+              />
+              <h5 id="productName"></h5>
+              <p id="productPrice" class="text-muted"></p>
+              <p id="productDescription"></p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-dark">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 mt-5">
+      <div class="container">
+        <div class="p-4 mt-5">
+          <div class="row g-4">
+            <div class="col-12 text-center mb-3">
+              <h2 class="display-6">ABOUT ERECLO</h2>
+              <p class="lead">
+                Refining modern menswear with timeless sophistication since 2024
+              </p>
+              <hr class="my-4 w-50 mx-auto" />
+            </div>
+
+            <div class="col-lg-6">
+              <div class="position-relative">
+                <img
+                  src="assets/img/ereclo.jpg"
+                  class="img-fluid rounded shadow"
+                  alt="Image"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <h4>Our Philosophy</h4>
+              <p>
+                At ERECLO STUDIO, we believe in creating clothing that matters.
+                Each piece is designed with intention, combining comfort with
+                style that transcends seasons and trends.
+              </p>
+
+              <h4 class="mt-3">Our Commitment</h4>
+              <p>
+                We're dedicated to sustainable production methods and ethical
+                practices throughout our supply chain. From sourcing materials
+                to final packaging, we prioritize quality and environmental
+                responsibility.
+              </p>
+
+              <div class="d-flex justify-content-between mt-4">
+                <div class="text-center border-end pe-3">
+                  <h2 class="fw-bold">1+</h2>
+                  <p class="text-muted">Years of Excellence</p>
+                </div>
+                <div class="text-center border-end px-3">
+                  <h2 class="fw-bold">2+</h2>
+                  <p class="text-muted">Team Members</p>
+                </div>
+                <div class="text-center ps-3">
+                  <h2 class="fw-bold">5+</h2>
+                  <p class="text-muted">Products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-5">
+              <h4 class="text-center mb-4">Our Journey</h4>
+              <div class="row">
+                <div class="col-md-3 text-center">
+                  <div class="border rounded py-3 h-100 shadow-sm">
+                    <h5>2024</h5>
+                    <p class="mb-0">Founded in Indonesia</p>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="border rounded py-3 h-100 shadow-sm">
+                    <h5>2024</h5>
+                    <p class="mb-0">First Collection Launch</p>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="border rounded py-3 h-100 shadow-sm">
+                    <h5>2024</h5>
+                    <p class="mb-0">First 10 sales</p>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="border rounded py-3 h-100 shadow-sm">
+                    <h5>2025</h5>
+                    <p class="mb-0">Sustainable Line Launch</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 mt-5">
+      <div class="container">
+        <div class="p-4 mt-3">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Get In Touch</h4>
+              <p>
+                Have questions about our products or need assistance with your
+                order? Reach out to us and our team will get back to you within
+                24 hours.
+              </p>
+
+              <form class="form-control">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Name</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                    id="name"
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Email</span>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <textarea
+                    id="message"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" id="btn" class="btn rounded-4">
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <div class="col-md-6 ps-md-5 mt-3">
+              <h4>Contact Information</h4>
+              <ul class="list-unstyled mt-4">
+                <li class="mb-3">
+                  <i
+                    class="fa-solid fa-location-dot fa-2xl"
+                    style="color: #e91c1c"
+                  ></i>
+                  Wonogiri, Central Java, Indonesia
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="icon-link link-dark link-underline-opacity-0"
+                  >
+                    <i
+                      class="fa-solid fa-envelope fa-2xl"
+                      style="color: #000000"
+                    ></i
+                    >email
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="icon-link link-dark link-underline-opacity-0"
+                  >
+                    <i
+                      class="fa-brands fa-whatsapp fa-2xl"
+                      style="color: #63e6be"
+                    ></i>
+                    WhatsApp
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <i class="bi bi-clock me-2"></i>
+                  Mon-Fri: 9AM - 5PM (GMT+7)
+                </li>
+              </ul>
+
+              <h5 class="mt-5">Follow Us</h5>
+              <div class="d-flex mt-4 ms-1">
+                <a
+                  class="icon-link link-dark link-underline-opacity-0 p-1"
+                  href="https://www.instagram.com/ereclo.studio/"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-instagram fa-2xl"
+                    style="color: #ff42e6"
+                  ></i>
+                </a>
+                <a
+                  href="https://shopee.co.id/ereclo.id"
+                  class="text-dark ms-3"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      fill="#f4511e"
+                      d="M36.683,43H11.317c-2.136,0-3.896-1.679-3.996-3.813l-1.272-27.14C6.022,11.477,6.477,11,7.048,11 h33.904c0.571,0,1.026,0.477,0.999,1.047l-1.272,27.14C40.579,41.321,38.819,43,36.683,43z"
+                    ></path>
+                    <path
+                      fill="#f4511e"
+                      d="M32.5,11.5h-2C30.5,7.364,27.584,4,24,4s-6.5,3.364-6.5,7.5h-2C15.5,6.262,19.313,2,24,2 S32.5,6.262,32.5,11.5z"
+                    ></path>
+                    <path
+                      fill="#fafafa"
+                      d="M24.248,25.688c-2.741-1.002-4.405-1.743-4.405-3.577c0-1.851,1.776-3.195,4.224-3.195 c1.685,0,3.159,0.66,3.888,1.052c0.124,0.067,0.474,0.277,0.672,0.41l0.13,0.087l0.958-1.558l-0.157-0.103 c-0.772-0.521-2.854-1.733-5.49-1.733c-3.459,0-6.067,2.166-6.067,5.039c0,3.257,2.983,4.347,5.615,5.309 c3.07,1.122,4.934,1.975,4.934,4.349c0,1.828-2.067,3.314-4.609,3.314c-2.864,0-5.326-2.105-5.349-2.125l-0.128-0.118l-1.046,1.542 l0.106,0.087c0.712,0.577,3.276,2.458,6.416,2.458c3.619,0,6.454-2.266,6.454-5.158C30.393,27.933,27.128,26.741,24.248,25.688z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  class="icon-link link-dark link-underline-opacity-0 p-1"
+                  href="https://www.tiktok.com/@ereclo.studio"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-tiktok fa-2xl ms-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-5 shadow-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-md-start mb-3 mb-md-0">
+            <h5 class="mb-3">ERECLO STUDIO</h5>
+            <p class="text-muted small">Est. 2024.</p>
+            <div class="d-flex mt-3">
+              <a href="#" class="me-3 text-dark"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="me-3 text-dark"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="me-3 text-dark"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0 text-center">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#home" class="text-decoration-none text-dark">Home</a>
+              </li>
+              <li>
+                <a href="#products" class="text-decoration-none text-dark"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="text-decoration-none text-dark"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-decoration-none text-dark"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <h5 class="mb-3">Contact</h5>
+            <p class="text-muted small mb-1">Email:</p>
+            <p class="text-muted small mb-1">Phone:</p>
+            <p class="text-muted small">
+              Address: Pucungan 02/04, Jatirejo, Girimarto, Wonogiri
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6 text-md-start">
+            <p class="mb-0 text-muted small">
+              © 2025 ERECLO STUDIO. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0 text-muted small">
+              <a href="#" class="text-decoration-none text-muted"
+                >Privacy Policy</a
+              >
+              |
+              <a href="#" class="text-decoration-none text-muted"
+                >Terms of Service</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function showProductDetail(name, price, description, imageUrl) {
+        document.getElementById("productName").innerText = name;
+        document.getElementById("productPrice").innerText = price;
+        document.getElementById("productDescription").innerText = description;
+        document.getElementById("productImage").src = imageUrl;
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
